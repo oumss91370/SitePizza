@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, sans-serif;
+}
+.ul-pizza{
+	list-style-type: none;
+	width: 60%; /* Adjust this to your desired width */
+	height: auto; /* Adjust this to your desired height */
+	margin: 0 auto; /
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; /* Or 'flex-start' to align left */
+}
+
+.pizza-item {
+	padding-bottom: 23px;
+	flex-basis: 30%; /* Adjust this to control the width of each pizza item */
+	margin-bottom: 20px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.pizza-img {
+	background-image: url("https://esthero.fr/cdn/shop/products/S-2941_8005bba4-58c5-497b-8771-4759901cd561_large.jpg?v=1595842873");
+	width: auto;
+	height: 212px;
+}
+
+.pizza-img img {
+	width: auto;
+	height: 202px;
+
+}
+/* Additional styling for buttons */
+
+.btn {
+	text-decoration: none;
+	background-color: #fe04d4;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn:hover {
+	background-color: black;
+	color: #fe04d4;
+	transition: 0.4s all;
+}
+
+
+
+.bouton-panier {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #ffffff; /* Texte blanc */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Animation douce */
+}
+
+.bouton-panier:hover, .bouton-panier:focus {
+    background-color: #0056b3; /* Couleur de fond plus foncée au survol */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+    color: #ffffff;
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+

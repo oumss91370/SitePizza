@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/connection.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="index.php" method="post">
+            <div class="group">
+                <input type="hidden" name="objet" value="Client">
+                <input type="hidden" name="action" value="connect">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <input type="text" name="idClient" required>
+                <label for="idClient">Name</label>
+
+            </div>
+
+            <div class="group">
+                <input type="password" name="nomClient" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="nomClient">Password</label>
+            </div>
+            <button type="submit">je me connecte</button>
+
+        </form>
+    </div>

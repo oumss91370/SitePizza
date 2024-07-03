@@ -1,0 +1,119 @@
+/* General container with a pizza or Italian restaurant vibe */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff8f0; /* Warm paper-like background */
+  background-image: url('images/pizza-pattern.png'), url('images/paper-texture.png');
+  background-position: left top, center center; /* Align the pizza pattern to the left, texture in the center */
+  background-repeat: repeat, repeat;
+  background-size: 100px, auto; /* Size for pizza pattern, auto for texture to cover */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(255, 248, 240, 0.9); /* Semi-transparent to allow texture to be visible */
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  background: #fff8f0; /* Warm paper-like background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d3a04c; /* Border color reminiscent of pizza crust */
+}
+
+/* Style for the form and its elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #d3a04c; /* Crust color for input underline */
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #806641; /* Darker shade for text, like baked crust */
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #bf812d; /* Highlight color, like melted cheese */
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #bf812d; /* Cheese-like color for the focus bar */
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+button {
+  border: none;
+  background: #bf812d; /* Melted cheese color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #a66f2a; /* Darker shade for hover effect */
+}

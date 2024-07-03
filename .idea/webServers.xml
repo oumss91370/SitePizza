@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5bd6378a-45d5-4ed2-bdd4-0a2d21ae7235" name="pizz" url="http://projets.iut-orsay.fr">
+        <fileTransfer rootFolder="/home/obenfdi" accessType="SFTP" host="projets.iut-orsay.fr" port="6022" sshConfigId="415ed457-2c3d-406d-905f-255ae36e5186" sshConfig="obenfdi@projets.iut-orsay.fr:6022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

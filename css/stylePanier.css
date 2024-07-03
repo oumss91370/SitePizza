@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.btn:hover, .btn:focus {
+    background-color: #b30000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    color: #ffffff;
+    text-decoration: none; /* No underline on hover */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.panier-item {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.panier-item h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.panier-item p {
+    color: #666;
+}
+
+.prix {
+    font-weight: bold;
+    color: #fe04d4;
+}
+
+.total {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.payment-button a {
+    display: inline-block;
+    background-color: #fe04d4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.payment-button a:hover {
+    background-color: #c303a9;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+    .panier-item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .panier-item {
+        flex-basis: 100%;
+    }
+}
+
+.bouton-panier {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #ffffff; /* Texte blanc */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Animation douce */
+}
+
+.bouton-panier:hover, .bouton-panier:focus {
+    background-color: #0056b3; /* Couleur de fond plus foncée au survol */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+    color: #ffffff;
+    text-decoration: none; /* Pas de soulignement au survol */
+}

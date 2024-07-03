@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form div label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+form div input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.bouton-panier {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #ffffff; /* Texte blanc */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Animation douce */
+}
+
+.bouton-panier:hover, .bouton-panier:focus {
+    background-color: #0056b3; /* Couleur de fond plus foncée au survol */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+    color: #ffffff;
+    text-decoration: none; /* Pas de soulignement au survol */
+}

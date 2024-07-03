@@ -1,0 +1,51 @@
+/* FormulairePaiement.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  p {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px auto;
+  }
+  
+  .nav-button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #286090;
+  }
+  
+  .bouton-panier {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #ffffff; /* Texte blanc */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Animation douce */
+}
+
+.bouton-panier:hover, .bouton-panier:focus {
+    background-color: #0056b3; /* Couleur de fond plus foncée au survol */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+    color: #ffffff;
+    text-decoration: none; /* Pas de soulignement au survol */
+}
